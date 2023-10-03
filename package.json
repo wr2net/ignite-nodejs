@@ -1,0 +1,21 @@
+{
+  "name": "ignite-nodejs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Studying nodejs at Rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wr2net/ignite-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wr2net/ignite-nodejs/issues"
+  },
+  "homepage": "https://github.com/wr2net/ignite-nodejs#readme"
+}
