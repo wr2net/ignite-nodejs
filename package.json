@@ -5,6 +5,7 @@
   "description": "Studying nodejs at Rocketseat",
   "main": "index.js",
   "scripts": {
+    "serve": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
