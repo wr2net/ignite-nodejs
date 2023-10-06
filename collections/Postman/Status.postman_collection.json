@@ -1,0 +1,24 @@
+{
+	"info": {
+		"_postman_id": "4fc2a87e-04f3-4ced-a5ee-1e893685b3c3",
+		"name": "Status",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2118747"
+	},
+	"item": [
+		{
+			"name": "Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}",
+					"host": [
+						"{{server}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
