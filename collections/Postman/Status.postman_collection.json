@@ -12,9 +12,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{server}}",
+					"raw": "{{server}}/status",
 					"host": [
 						"{{server}}"
+					],
+					"path": [
+						"status"
 					]
 				}
 			},
