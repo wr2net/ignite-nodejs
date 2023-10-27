@@ -1,4 +1,4 @@
-# Ignite NodeJs
+# Criando API REST com Node.js
 
 ## Iniciando servidor:
 ```bash
