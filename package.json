@@ -5,18 +5,32 @@
   "description": "Studying nodejs at Rocketseat",
   "main": "index.js",
   "scripts": {
-    "serve": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wr2net/ignite-nodejs.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wagner Rigoli da Rosa <wagnerr2@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wr2net/ignite-nodejs/issues"
   },
-  "homepage": "https://github.com/wr2net/ignite-nodejs#readme"
+  "homepage": "https://github.com/wr2net/ignite-nodejs#readme",
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^0.4.6",
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20.8.9",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "tsx": "^3.14.0"
+  }
 }
