@@ -13,7 +13,7 @@
     "url": "git+https://github.com/wr2net/ignite-nodejs.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wagner Rigoli da Rosa <wagnerr2@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wr2net/ignite-nodejs/issues"
