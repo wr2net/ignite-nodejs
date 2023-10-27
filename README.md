@@ -1,9 +1,13 @@
 # Ignite NodeJs
 
-## Iniciando servidor:
+## Projeto 01 - Fundamentos do Node.js
+
 ```bash
-node src/server.js
+git checkout Fundamentos-do-NodeJs
 ```
 
-* [Insomnia Collections](collections/Insomnia/README.md)
-* [Postman Collections](collections/Postman/README.md)
+## Projeto 02 - Criando API REST com Node.js
+
+```bash
+git checkout Criando-API-REST-com-NodeJs
+```
