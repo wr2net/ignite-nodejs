@@ -12,7 +12,7 @@ app.get('/status', () => {
 
 app.get('/schema', async () => {
 
-    const tables = await knex('sqlite_schema').select('*')
+    const tables = await knex('sqlite_schema').select('*');
 
     return {
         'status': 200,
