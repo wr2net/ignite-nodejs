@@ -1,9 +1,16 @@
 import fastify from 'fastify';
 import { knex } from './database';
-import * as crypto from "crypto";
-import {env} from "./env";
+import {transactionsRoutes} from "./routes/transactions";
+
 
 const app = fastify();
+
+app.register(
+  transactionsRoutes,
+  {
+      prefix: 'transaction'
+  }
+)
 
 app.get('/status', () => {
     return {
@@ -22,22 +29,10 @@ app.get('/schema', async () => {
     };
 });
 
-app.post('/transaction', async () => {
-    const transaction = await knex('transactions').insert({
-        id: crypto.randomUUID(),
-        title: 'Transação de teste',
-        amount: 1000
-    }).returning('*')
 
-    return transaction
-})
-
-app.get('/transaction', async () => {
-    return knex('transactions').select('*');
-})
 
 app.listen({
-    port: env.PORT
+    port: parseInt(process.env.PORT, 10)
 }).then(() => {
     console.log('HTTP Server Running!');
 });
