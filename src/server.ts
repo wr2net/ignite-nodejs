@@ -1,9 +1,12 @@
 import fastify from 'fastify';
 import { knex } from './database';
 import {transactionsRoutes} from "./routes/transactions";
+import * as fastifyCookie from "@fastify/cookie";
 
 
 const app = fastify();
+
+app.register(fastifyCookie)
 
 app.register(
   transactionsRoutes,
