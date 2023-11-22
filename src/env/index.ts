@@ -11,7 +11,8 @@ const WARNING = 'Invalid environment variables!';
 
 const envSchema = z.object({
     NODE_ENV: z.enum(['development', 'test', 'production']).default('production'),
-    // PORT: z.number().default(3333),
+    PORT: z.coerce.number().default(3333),
+    DATABASE_CLIENT: z.enum(['sqlite', 'pg']),
     DATABASE_URL: z.string(),
     DATABASE_MIGRATION: z.string(),
 });
