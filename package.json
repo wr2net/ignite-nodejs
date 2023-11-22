@@ -5,7 +5,7 @@
   "description": "Studying nodejs at Rocketseat",
   "main": "index.js",
   "engines": {
-    "node": ">= 18"
+    "node": "18"
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
