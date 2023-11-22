@@ -5,18 +5,42 @@
   "description": "Studying nodejs at Rocketseat",
   "main": "index.js",
   "scripts": {
-    "serve": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --trace-warnings --loader tsx ./node_modules/.bin/knex",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wr2net/ignite-nodejs.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wagner Rigoli da Rosa <wagnerr2@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wr2net/ignite-nodejs/issues"
   },
-  "homepage": "https://github.com/wr2net/ignite-nodejs#readme"
+  "homepage": "https://github.com/wr2net/ignite-nodejs#readme",
+  "dependencies": {
+    "@fastify/cookie": "^9.1.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "knex": "^3.0.1",
+    "sqlite3": "^5.1.6",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^0.4.6",
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20.8.9",
+    "@types/supertest": "^2.0.16",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "supertest": "^6.3.3",
+    "tsx": "^3.14.0",
+    "vitest": "^0.34.6"
+  }
 }
