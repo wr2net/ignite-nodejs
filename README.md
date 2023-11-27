@@ -11,3 +11,9 @@ git checkout Fundamentos-do-NodeJs
 ```bash
 git checkout Criando-API-REST-com-NodeJs
 ```
+
+## [Projeto 03 - API Node.js com SOLID](https://github.com/wr2net/ignite-nodejs/tree/APINodejsComSOLID)
+
+```bash
+git checkout APINodejsComSOLID
+```
