@@ -4,6 +4,7 @@
   "description": "GymPass style app.",
   "main": "index.js",
   "dependencies": {
+    "@prisma/client": "5.6.0",
     "abbrev": "^1.1.1",
     "abort-controller": "^3.0.0",
     "abstract-logging": "^2.0.1",
@@ -492,6 +493,7 @@
     "@rocketseat/eslint-config": "2.1.0",
     "@types/node": "^20.10.0",
     "eslint": "8.54.0",
+    "prisma": "5.6.0",
     "tsup": "^8.0.1",
     "tsx": "^4.6.0",
     "typescript": "^5.3.2"
